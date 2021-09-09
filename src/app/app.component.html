@@ -1,4 +1,24 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=100px, initial-scale=1.0">
+  <title>Thông tin cá nhân</title>
+</head>
+
+<body>
+  <h1>{{name}}</h1>
+  <h1>{{user.name}}</h1>
+  <h1>{{user.age}}</h1>
+  <h1>{{user.dev}}</h1>
+  <button type="buton" (click)=hanrd()> click me</button>
+  <br>
+  <input type="text"  />
+  <br>
+  <input type="text" [(ngModel)]="name1"/>
+  <h2>{{name1}}</h2>
+</body>
+
+</html>
