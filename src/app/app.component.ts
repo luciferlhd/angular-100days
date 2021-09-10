@@ -8,9 +8,10 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
   public name1: string = '';
+  public tu : number=0;
   user = {
     name: 'lê huỳnh đức',
-    age: '20',
+    age: 20,
     dev: 'c#'
   };
   hanrd() {

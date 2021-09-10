@@ -18,7 +18,14 @@
   <input type="text"  />
   <br>
   <input type="text" [(ngModel)]="name1"/>
+
   <h2>{{name1}}</h2>
+  <div *ngIf="user.age>=18"> you seee name for you {{user.name}} </div>
+  <button  type="button" (click)="tu =tu+1">+</button>
+  Tuổi:{{tu}}
+  <button  type="button" (click)="tu =tu-1">-</button>
+  <div *ngIf="tu>=18"> you seee name for you </div>
+  <div *ngIf="tu<18"> you can see name for you </div>
 </body>
 
 </html>
