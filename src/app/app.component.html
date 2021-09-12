@@ -1,4 +1,4 @@
-<div *ngIf="age >= 13; else noPG13">
+<!-- <div *ngIf="age >= 13; else noPG13">
 Bạn có thể xem nội dung PG-13
 </div>
 <ng-template #noPG13>
@@ -6,5 +6,19 @@ Bạn có thể xem nội dung PG-13
   Bạn không thể xem nội dung PG-13
 </div>
 </ng-template>
-
-<input type="number" class="form-control" [(ngModel)]="age">
+<!- 2 way binding +ng-template -->
+<!-- <input type="number" class="form-control" [(ngModel)]="age"> -->
+<div class="card mx-4 mt-5">
+  <div class="card-header">
+    You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>
+  </div>
+  <div class="card-body">
+    There are <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> items was selected.
+  </div>
+  <div class="card-footer">
+    You have selected <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container> items.
+  </div>
+</div>
+<ng-template #counterTmpl>
+  <span class="badge" style=" background-color: aqua;">{{ counter }}</span> items
+</ng-template>

@@ -9,4 +9,5 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
 
   public age: number;
+  counter=1;
 }

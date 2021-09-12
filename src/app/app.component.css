@@ -1,3 +1,7 @@
 p {
-  font-family: Lato;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: aqua;
+}
+.card {
+  color: black;
 }
